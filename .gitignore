@@ -1,8 +1,9 @@
 #python
 __pycache__/
-
-# virtualenv
 env/
+venv/
+.env/
+.venv/
 
 # pyinstaller
 build/
