@@ -7,6 +7,8 @@ import os
 
 
 digits = os.getenv("DIGITOS")
+if digits == None:
+    digits = 0
 
 
 @click.command()

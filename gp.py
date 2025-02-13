@@ -6,6 +6,8 @@ import click
 from os import getenv
 
 d = getenv("DIGITOS")
+if d == None:
+    d = 0
 
 
 @click.command()
