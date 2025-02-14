@@ -17,10 +17,10 @@ if digits == None:
 def tr(maxima, minima):
     """Calcula projecoes e niveis em lateralidade"""
     tamanho = maxima - minima
-    click.echo("%.{0}f pts".format(digits) % abs(tamanho))
+    click.echo("%.{0}f pt".format(digits) % abs(tamanho))
     projecao_acima = maxima + tamanho
     click.echo("%.{0}f 1X".format(digits) % projecao_acima)
-    click.echo("%.{0}f MAX".format(digits) % maxima)
+    click.echo("%.{0}f".format(digits) % maxima)
     niveis = [0.33, 0.66]
     nivel = []
     i = 0
@@ -28,7 +28,7 @@ def tr(maxima, minima):
         nivel.append(maxima - tamanho * n)
         click.echo("%.{0}f %.2f".format(digits) % (nivel[i], n))
         i += 1
-    click.echo("%.{0}f MIN".format(digits) % minima)
+    click.echo("%.{0}f".format(digits) % minima)
     projecao_abaixo = minima - tamanho
     click.echo("%.{0}f 1X".format(digits) % projecao_abaixo)
 
