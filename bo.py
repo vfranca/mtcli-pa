@@ -3,12 +3,6 @@ Calcula pullback e projeções de rompimento
 """
 
 import click
-import os
-
-
-digits = os.getenv("DIGITOS")
-if digits == None:
-    digits = 0
 
 
 @click.command()
