@@ -5,9 +5,9 @@ Calcula o gap do dia
 import click
 from os import getenv
 
-d = getenv("DIGITOS")
-if d == None:
-    d = 0
+digits = getenv("DIGITOS")
+if digits == None:
+    digits = 0
 
 
 @click.command()
@@ -16,7 +16,7 @@ if d == None:
 def gp(coy, ood):
     """Calcula o gap do dia"""
     gap = ood - coy
-    click.echo("%.{0}f".format(d) % gap)
+    click.echo("%.{0}f".format(digits) % gap)
 
 
 if __name__ == "__main__":
