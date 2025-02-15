@@ -5,6 +5,7 @@ env/
 venv/
 .env/
 .venv/
+.coverage
 
 # pyinstaller
 build/
