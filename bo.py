@@ -20,7 +20,7 @@ def bo(final, inicio):
     click.echo("%.{0}f pt".format(digits) % abs(tamanho))
     projecao1 = final + tamanho
     projecao2 = final + tamanho * 2
-#    click.echo("%.{0}f 2X".format(digits) % projecao2)
+    #    click.echo("%.{0}f 2X".format(digits) % projecao2)
     click.echo("%.{0}f 1X".format(digits) % projecao1)
     click.echo("%.{0}f".format(digits) % final)
     niveis = [0.33, 0.50, 0.66]
