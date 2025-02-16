@@ -8,7 +8,7 @@ import click
 @click.command()
 @click.argument("final", type=float)
 @click.argument("inicio", type=float)
-@click.option("--digitos", "-d", type=int, default=0)
+@click.option("--digitos", "-d", type=int, default=0, envvar="DIGITOS")
 def bo(final, inicio, digitos):
     """Calcula pullbacks e projecoes de rompimento"""
     tamanho = final - inicio

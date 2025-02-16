@@ -8,7 +8,7 @@ import click
 @click.command()
 @click.argument("preco1", type=float)
 @click.argument("preco2", type=float)
-@click.option("--digitos", "-d", type=int, default=0)
+@click.option("--digitos", "-d", type=int, default=0, envvar="DIGITOS")
 def ln(preco1, preco2, digitos):
     """Calcula linhas de canal"""
     dif = preco2 - preco1

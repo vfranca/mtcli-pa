@@ -8,7 +8,7 @@ import click
 @click.command()
 @click.argument("coy", envvar="COY", type=float)
 @click.argument("ood", envvar="OOD", type=float)
-@click.option("--digitos", "-d", type=int, default=0)
+@click.option("--digitos", type=int, default=0, envvar="DIGITOS")
 def gp(coy, ood, digitos):
     """Calcula o gap do dia"""
     gap = ood - coy

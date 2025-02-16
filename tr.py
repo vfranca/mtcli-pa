@@ -8,7 +8,7 @@ import click
 @click.command()
 @click.argument("maxima", type=float)
 @click.argument("minima", type=float)
-@click.option("--digitos", "-d", type=int, default=0)
+@click.option("--digitos", "-d", type=int, default=0, envvar="DIGITOS")
 def tr(maxima, minima, digitos):
     """Calcula projecoes e niveis em lateralidade"""
     tamanho = maxima - minima
