@@ -3,10 +3,10 @@ Aplicativo CLI para calcular níveis  e projeções de price action
 """
 
 import click
-from bo import bo
-from ln import ln
-from tr import tr
-from gp import gp
+from pa.bo import bo
+from pa.ln import ln
+from pa.tr import tr
+from pa.gp import gp
 
 
 @click.group()

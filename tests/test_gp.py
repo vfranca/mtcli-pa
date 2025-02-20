@@ -1,5 +1,5 @@
 from click.testing import CliRunner
-from pa import pa
+from pa.pa import pa
 
 
 run = CliRunner()
