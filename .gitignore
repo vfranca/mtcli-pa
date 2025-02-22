@@ -10,4 +10,4 @@ venv/
 # pyinstaller
 build/
 dist/
-*.spec
+# *.spec
