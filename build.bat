@@ -1,1 +1,0 @@
-@pyinstaller -y pa.spec
