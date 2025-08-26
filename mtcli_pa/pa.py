@@ -3,13 +3,14 @@ Aplicativo CLI para calcular níveis  e projeções de price action
 """
 
 import click
-from pa.bo import bo
-from pa.ln import ln
-from pa.tr import tr
-from pa.gp import gp
+from .bo import bo
+from .ln import ln
+from .tr import tr
+from .gp import gp
 
 
 @click.group()
+@click.version_option(package_name="mtcli-pa")
 def pa():
     """Calcula niveis e projecoes de price action"""
     pass

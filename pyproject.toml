@@ -1,23 +1,24 @@
-[tool.poetry]
-name = "pa"
+[project]
+name = "mtcli-pa"
 version = "0.1.0"
-description = "Aplicativo CLI para calcular níveis e projeções de price action"
-authors = ["Valmir França <vfranca3@gmail.com>"]
-license = "BSD-3-Clause"
+description = "Plugin mtcli para calcular níveis e projeções de price action"
+authors = [
+    {name = "Valmir França da Silva",email = "vfranca3@gmail.com"}
+]
+license = "GPL-3.0"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.11"
-click = "^8.1.8"
-
+repository = "https://github.com/vfranca/mtcli-pa"
+requires-python = ">=3.11,<3.14.0"
+dependencies = [
+    "mtcli (>=1.18.1,<2.0.0)",
+]
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.3.4"
-pytest-env = "^1.1.5"
-pytest-cov = "^6.0.0"
+pytest = "^8.4.1"
+black = "^25.1.0"
 
-[tool.poetry.scripts]
-pa = "pa.pa:pa"
+[tool.poetry.plugins."mtcli.plugins"]
+pa = "mtcli_pa.pa:pa"
 
 [build-system]
 requires = ["poetry-core"]
