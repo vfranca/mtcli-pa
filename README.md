@@ -1,30 +1,12 @@
-# \# mtcli-pa
-
-&nbsp; 
-
-Plugin mtcli para calcular níveis e projeções de price action
-
-&nbsp; 
-
+# mtcli-pa
+  
+Plugin mtcli para calcular níveis e projeções de price action.
+  
 ---
-
-&nbsp; 
-
-\## Instalação
-
-
-
-&nbsp; 
-
+  
+## Instalação
+  
 ```cmd
-
-git clone git@github.com:vfranca/mtcli-pa.git
-
-cd mtcli-pa
-
-pip install .
-
+pip install mtcli-pa
 ```
-
-
-
+  
