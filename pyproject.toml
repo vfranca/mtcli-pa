@@ -21,10 +21,11 @@ issues = "https://github.com/vfranca/mtcli-pa/issues"
 [project.entry-points."mtcli.plugins"]
 pa = "mtcli_pa.pa:pa"
 
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.4.1"
-black = "^25.1.0"
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+pytest = "^8.4.1"
+
