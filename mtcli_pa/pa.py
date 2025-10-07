@@ -9,7 +9,10 @@ from .tr import tr
 from .gp import gp
 
 
-@click.group()
+@click.group(
+    "pa",
+    help="Calcula níveis e projeções com base em Price Action (suporte, resistência, alvos).",
+)
 @click.version_option(package_name="mtcli-pa")
 def pa():
     """Calcula niveis e projecoes de price action"""
