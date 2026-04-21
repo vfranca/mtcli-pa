@@ -1,6 +1,6 @@
 [project]
 name = "mtcli-pricelevels"
-version = "1.0.4"
+version = "1.0.4.dev0"
 description = "Plugin mtcli para calcular níveis e projeções de price action"
 readme = "docs/README.md"
 authors = [
